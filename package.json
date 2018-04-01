@@ -1,13 +1,13 @@
 {
-  "name": "vue-image",
-  "version": "0.0.1",
+  "name": "vue-img-enhanced",
+  "version": "0.1.0",
   "description": "A Vue.js Plugin",
   "author": "Alexander Wennerstrøm <alexanderw0310@gmail.com>",
-  "main": "dist/vue-image.common.js",
-  "module": "dist/vue-image.esm.js",
-  "browser": "dist/vue-image.js",
-  "unpkg": "dist/vue-image.js",
-  "style": "dist/vue-image.css",
+  "main": "dist/vue-img-enhanced.common.js",
+  "module": "dist/vue-img-enhanced.esm.js",
+  "browser": "dist/vue-img-enhanced.js",
+  "unpkg": "dist/vue-img-enhanced.js",
+  "style": "dist/vue-img-enhanced.css",
   "files": [
     "dist",
     "src"
@@ -119,12 +119,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlexanderYW/vue-image.git"
+    "url": "git+https://github.com/AlexanderYW/vue-img-enhanced.git"
   },
   "bugs": {
-    "url": "https://github.com/AlexanderYW/vue-image/issues"
+    "url": "https://github.com/AlexanderYW/vue-img-enhanced/issues"
   },
-  "homepage": "https://github.com/AlexanderYW/vue-image#readme",
+  "homepage": "https://github.com/AlexanderYW/vue-img-enhanced#readme",
   "license": {
     "type": "MIT",
     "url": "http://www.opensource.org/licenses/mit-license.php"
