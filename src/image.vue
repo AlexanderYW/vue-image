@@ -1,5 +1,5 @@
 <template>
-    <div class="vueImage" :style="getImageContainerStyle">
+    <div class="vueImgEnhanced" :style="getImageContainerStyle">
         <transition name="fade" v-if="blurImage">
             <img v-show="loading" :style="getBlurImageStyle" width="100%" ref="blurImageContainer" />
         </transition>
@@ -14,7 +14,7 @@
 
 <script>
 export default {
-    name: 'vue-image',
+    name: 'v-img-enhanced',
     props: {
         src: {
             type: String,
@@ -196,7 +196,7 @@ export default {
 </script>
 
 <style>
-    .vueImage {
+    .vueImgEnhanced {
         position:relative;
         display:inline-block;
     }
