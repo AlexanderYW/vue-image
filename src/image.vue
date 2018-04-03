@@ -54,9 +54,10 @@ export default {
             this.loading = false
             this.$emit('onerror', xhr)
         },
-        onProgress (ratio) {
-            this.$emit('onprogress', ratio)
+        onProgress (progress) {
+            this.$emit('onprogress', progress)
         },
+
         /**
          * https://stackoverflow.com/a/42196770
          * Loads an image with progress callback.
@@ -122,16 +123,16 @@ export default {
             var imageContainer = _this.$refs.imageContainer
             var imageUrl = _this.src
 
-            _this.loadImage(imageUrl, (ratio) => {
-                if (ratio === -1) {
+            _this.loadImage(imageUrl, (progress) => {
+                if (progress === -1) {
                     // Ratio not computable. Let's make this bar an undefined one.
                     // Remember that since ratio isn't computable, calling this function
                     // makes no further sense, so it won't be called again.
                     _this.progressValue = -1
                 } else {
                     // We have progress ratio; update the bar.
-                    _this.progressValue = ratio
-                    _this.onProgress(ratio)
+                    _this.progressValue = progress
+                    _this.onProgress(progress)
                 }
             }).then(imgSrc => {
                 // Loading successfuly complete; set the image and probably do other stuff.

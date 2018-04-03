@@ -3,6 +3,15 @@
   "version": "0.1.0",
   "description": "A Vue.js Plugin",
   "author": "Alexander Wennerstrøm <alexanderw0310@gmail.com>",
+  "keywords": [
+    "vue",
+    "img",
+    "image",
+    "enhanced",
+    "progressive",
+    "blur",
+    "blurry"
+  ],
   "main": "dist/vue-img-enhanced.common.js",
   "module": "dist/vue-img-enhanced.esm.js",
   "browser": "dist/vue-img-enhanced.js",
