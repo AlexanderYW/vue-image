@@ -153,7 +153,7 @@ export default {
     },
     computed: {
         getImageContainerStyle () {
-            if (typeof this.blurSrc !== 'undefined') {
+            if (typeof this.width !== 'undefined') {
                 return {
                     width: this.width
                 }
